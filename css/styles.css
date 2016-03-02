@@ -1,0 +1,91 @@
+  /*purely for syntax reference, don't use */
+  /*.box {
+  transition-property: background;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  transition: [property] [duration] [timing-function] [delay];
+}
+  .box:hover {
+  background: #ff7b29;
+}*/
+
+/*GLOBAL STYLES*/
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+  /*box changes color and into a circle*/
+.box {
+  width: 100px;
+  height: 100px;
+  color: #eee;
+  text-align: center;
+  line-height: 100px;
+}
+
+#box1 {
+   background-color: teal;
+   transition: all 250ms ease-in-out;
+   margin-bottom: 20px;
+}
+
+#box1:hover {
+  background-color: #ED4F4C;
+  border-radius: 50%;
+}
+
+/*bill murray with a floating inf box over his face*/
+.person-card {
+  position: relative;
+  overflow: hidden;
+  width: 200px;
+  height: 300px;
+  border: 2px solid #ed4f4c;
+  margin-bottom: 20px;
+}
+
+
+.person-info {
+  position: absolute;
+  top: 240px;
+  width: 190px;
+  height: 300px;
+  margin: 0 auto;
+  color: white;
+  font-family: sans-serif;
+  padding: 8px;
+  background-color: rgba(237, 79, 76, .7);
+  transition: all 1s ease-in-out;
+}
+.person-info:hover {
+  top: 0;
+/*   transform: translate */
+}
+
+.details-title {
+  margin-bottom: 10px;
+}
+
+span {
+  font-size: 1.5em;
+}
+
+/*expanding ghost
+can change active (click) to hover*/
+.ghostWrapper {
+  max-width: 500px;
+  max-height: 500px;
+  margin: 75px;
+ }
+#ghost {
+  width: 50px;
+  transition: transform 500ms ease-in-out;
+}
+#ghost:active {
+  transform: scale(3);
+}
