@@ -39,7 +39,7 @@ html {
   border-radius: 50%;
 }
 
-/*bill murray with a floating inf box over his face*/
+/*bill murray with a floating in box over his face*/
 .person-card {
   position: relative;
   overflow: hidden;
@@ -53,7 +53,7 @@ html {
 .person-info {
   position: absolute;
   top: 240px;
-  width: 190px;
+  width: 197px;
   height: 300px;
   margin: 0 auto;
   color: white;
@@ -88,4 +88,183 @@ can change active (click) to hover*/
 }
 #ghost:active {
   transform: scale(3);
+}
+
+/*circle spoke span hover*/
+
+.circleWrapper {
+  background-color: honeydew;
+  width: 500px;
+  height: 500px;
+  text-align: center;
+  color: #ed4f4c;
+}
+
+.circle {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  border: 4px solid rgba(237, 79, 76, .7);
+  margin: 30px auto;
+  border-radius: 50%;
+}
+
+.line {
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  left: 50%;
+  bottom: 0;
+  transition: background 0.5s linear;
+  transform-origin: 50% 50%;
+  margin-left: -2px;
+}
+
+.circle:hover .line {
+  background: rgba(237, 79, 76, .3);
+}
+
+.line:nth-child(2) {
+  transform: rotate(22.5deg);
+}
+
+.line:nth-child(3) {
+  transform: rotate(45deg);
+}
+
+.line:nth-child(4) {
+  transform: rotate(67.5deg);
+}
+
+.line:nth-child(5) {
+  transform: rotate(90deg);
+}
+
+.line:nth-child(6) {
+  transform: rotate(112.5deg);
+}
+
+.line:nth-child(7) {
+  transform: rotate(135deg);
+}
+
+.line:nth-child(8) {
+  transform: rotate(157deg);
+}
+.dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: teal;
+  display: block;
+  position: absolute;
+  animation: moveme 5s infinite ease-in-out;
+}
+.line:first-child span {
+  animation-delay: 2.1875s;
+}
+
+.line:nth-child(2) span {
+  -webkit-animation-delay: 1.875s;
+          animation-delay: 1.875s;
+}
+
+.line:nth-child(3) span {
+  -webkit-animation-delay: 1.5625s;
+          animation-delay: 1.5625s;
+}
+
+.line:nth-child(4) span {
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
+}
+
+.line:nth-child(5) span {
+  -webkit-animation-delay: 0.9375s;
+          animation-delay: 0.9375s;
+}
+
+.line:nth-child(6) span {
+  -webkit-animation-delay: 0.625s;
+          animation-delay: 0.625s;
+}
+
+.line:nth-child(7) span {
+  -webkit-animation-delay: 0.3125s;
+          animation-delay: 0.3125s;
+}
+
+@keyframes moveme {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 99%;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+
+/*box transforms*/
+
+.box {
+  position: relative;
+}
+
+.box1 {
+  background: #00aa9d;
+  border-radius: 3px;
+  height: 150px;
+  margin: 100px;
+  position: absolute;
+  transition: transform 0.8s;
+  width: 150px;
+}
+
+
+.reveal {
+  background: #2b3f53;
+  border-radius: 3px;
+  height: 150px;
+  margin: 100px;
+  transition: transform 0.8s;
+  position: absolute;
+  width: 150px;
+}
+
+.reveal:hover {
+  transform: translate(20px, 20px);
+}
+
+.boxWrapper {
+  position: relative;
+}
+
+.box3 {
+  border-radius: 3px;
+  top: 200px;
+  width: 150px;
+  height: 150px;
+  margin: 100px;
+  position: absolute;
+  transition: all 0.8s ease-in-out;
+  background: rgba(254, 121, 2, 0);
+}
+
+.box3:hover {
+  transform: translate(20px, 20px);
+  background: rgba(254, 121, 2, 1);
+}
+
+.box2 {
+  border-radius: 3px;
+  top: 200px;
+  width: 150px;
+  height: 150px;
+  margin: 100px;
+  position: absolute;
+  transition: transform 0.8s;
+  background: rgba(0, 176, 213, 1);
 }
