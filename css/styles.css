@@ -269,6 +269,9 @@ can change active (click) to hover*/
   background: rgba(0, 176, 213, 1);
 }
   /*skier*/
+.skiMan {
+  min-height: 500px;
+}
 
  .skier {
     width: 100px;
@@ -276,6 +279,7 @@ can change active (click) to hover*/
 /*     background-color: red; */
     position: relative;
     margin-top: 500px;
+    margin-bottom: 250px;
     animation: flip 200ms, example 6s infinite;
 /*     animation: flip 200ms;
     animation-name: example;
