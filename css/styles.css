@@ -268,3 +268,36 @@ can change active (click) to hover*/
   transition: transform 0.8s;
   background: rgba(0, 176, 213, 1);
 }
+  /*skier*/
+
+ .skier {
+    width: 100px;
+    height: 100px;
+/*     background-color: red; */
+    position: relative;
+    margin-top: 500px;
+    animation: flip 200ms, example 6s infinite;
+/*     animation: flip 200ms;
+    animation-name: example;
+    animation: example 8s infinite; */
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%  {transform: scaleX(-1);
+    filter: FlipH;left:0px; top:0px;}
+    24% {transform: scaleX(-1);
+    filter: FlipH;}
+    25%  {transform: scaleX(1);left:400px;top:125px;}
+    49% {transform: scaleX(1)}
+    50%  {left:0px; top:250px;transform: scaleX(-1);
+    filter: FlipH;}
+    74% {transform: scaleX(-1);
+    filter: FlipH}
+    75% {transform: scaleX(1);
+    filter: FlipH;left:400px; top:375px;}
+    99% {transform: scaleX(1);
+    filter: FlipH}
+    100% {transform: scaleX(-1);
+    filter: FlipH;left:0px; top:500px;}
+}
